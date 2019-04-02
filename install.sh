@@ -33,6 +33,6 @@ fi
 # modify the command rm to require confirmation
 echo "do you want to add alias to .bash_profile? [Y/N]"
 read ans
-if [ ans = "Y" ]
+if [ ans = "Y" ]; then
 echo "alias rm='rm -i'" >> ~/.bash_profile
 fi
