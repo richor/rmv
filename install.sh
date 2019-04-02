@@ -35,3 +35,4 @@ echo "do you want to add alias to .bash_profile? [Y/N]"
 read ans
 if [ ans = "Y" ]
 echo "alias rm='rm -i'" >> ~/.bash_profile
+fi
