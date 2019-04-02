@@ -7,7 +7,7 @@ read dirpath
 if [ -z $dirpath ]; then
     dirpath=/usr/local/bin
     echo "copying 'rmv' to /usr/local/bin...\n"
-    #cp ./rmv $dirpath
+    cp ./rmv $dirpath
     echo "successfully install the rmv!\n" 
 elif [ -e $dirpath ]; then
     echo "the directory" $dirpath "exists already, are you sure want to copy command "rmv" to this place? [Y/N]"
