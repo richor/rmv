@@ -29,7 +29,7 @@ echo -e "${NATOM}\n${NAME}" > $NAME.xyz
 cat $NAME.tmp >>$NAME.xyz
 echo "$NAME.xyz created."
 
-echo -e "#opt b3lyp\/6-31+g(d,p)/\n\n${NAME}\n\n${CHARGE} ${MULTIP}" >$NAME.gjf
+echo -e "#opt b3lyp/6-31+g(d,p)\n\n${NAME}\n\n${CHARGE} ${MULTIP}" >$NAME.gjf
 echo "add freeze tag? [Y/N]"
 read ans
 if [ $ans = "Y" ]; then
