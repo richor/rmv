@@ -1,10 +1,10 @@
 #!/bin/bash
-#
+# First created by ChemiAndy, 2014.03.11
+# upload to github and modified by Richor, 2019 
 # Purpose：从高斯输出文件中提取坐标信息生成xyz文件和输入文件
-# Usage： glog2gjf xxxx.log 后面为高斯输出文件名作为参数
+# Usage： gout2gjf xxxx.log 后面为高斯输出文件名作为参数
 # Can run both on MacOS and Linux
 #
-# Richor, 2019.04.03
   
 # get the prefix of the gaussian output file
 NAME=`echo $1|sed "s/\..*$//"`
