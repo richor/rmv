@@ -8,11 +8,11 @@ if [ $# == 0  ]; then
 else 
   while true; do
     if ! kill -0 $1 > /dev/null 2>&1; then
-	    echo "PID $1 finished!" >&2
-	    bash $2
-      break
+	echo "PID $1 finished!" >&2
+	bash $2
+    	break
     else
-	    sleep 120
+    	sleep 120
     fi
   done
 fi
