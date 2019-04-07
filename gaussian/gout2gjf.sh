@@ -42,5 +42,4 @@ echo "$NAME.gjf created."
   
 # Clean tmp file
 rm $NAME.tmp
-echo "$NAME.tmp deleted."
 echo "End!"
