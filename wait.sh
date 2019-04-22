@@ -7,7 +7,7 @@ if [ $# == 0  ]; then
   echo "used to wait the pid to finish, then submit run.sh"
 else 
   while true; do
-    if ! kill -0 $1 > /dev/null 2>&1; then
+    if ! ps -p $1 > /dev/null 2>&1; then
 	echo "PID $1 finished!" >&2
 	bash $2
     	break
