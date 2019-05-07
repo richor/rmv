@@ -1,6 +1,7 @@
 #!/bin/sh
 #usage: wait.sh pid run.sh
 #used to wait the pid to finish, then submit run.sh
+# pid must be the parent pid
 
 if [ $# == 0  ]; then
   echo "usage: wait.sh pid run.sh"
