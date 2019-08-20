@@ -1,6 +1,7 @@
 #used to obtain the gjf file of 3d potential scan.
 #need a gjf file as input
-#several data needs provide: 1. the specified bond, angle and dihedral. Actually, only need to provide which line of the gjf file. 2. the range of these parameters, and step size.
+#several data needs provide: 1. the specified bond, angle and dihedral. Actually, only need to provide which line of the gjf file. 
+# 2. the range of these parameters, and step size.
 
 
 # initial parameters
