@@ -1,4 +1,4 @@
-# obtain energy from log files
+# obtain energy from scan log files
 
 input_log='dha.log'
 output_txt='dha1.txt'
