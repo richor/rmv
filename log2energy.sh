@@ -1,4 +1,5 @@
 # obtain energy from scan log files
+# if failed to finish, last line will have only energy.
 
 input_log='dha.log'
 output_txt='dha1.txt'
@@ -15,4 +16,4 @@ grep "!       $scan1" $input_log  > temp
 grep "!       $scan2" $input_log > temp1
 grep "!       $scan3" $input_log  > temp1a
 paste temp temp1 temp1a| awk '{if(NR>1) print $3,$10,$17}' > temp3
-paste temp3 temp2 | sort > $output_txt
+paste temp3 temp2 > $output_txt
